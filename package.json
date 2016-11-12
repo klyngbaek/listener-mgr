@@ -1,0 +1,34 @@
+{
+  "name": "listener-mgr",
+  "version": "1.1.8",
+  "description": "Manage timeouts intervals and event listeners",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && tape test/*",
+    "lint": "jshint **.js",
+    "cover": "istanbul cover tape test/*",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "keywords": [],
+  "author": "Kristian Lyngbaek",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "jshint": "^2.9.1",
+    "tape": "~4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/klyngbaek/listener-mgr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klyngbaek/listener-mgr/issues"
+  },
+  "homepage": "https://github.com/klyngbaek/listener-mgr",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  }
+}
